@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="formbiodata" action="proses.php" method="post" novalidate>
+        <h2>Form Biodata</h2>
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="pass">Password:</label><br>
+        <input type="password" id="pass" name="pass" required><br><br>
+        
+        <div class="form-group">
+            <label>Jenis Kelamin:</label><br>
+            <div class="radio-group"><br>
+            <input type="radio" id="laki-laki" name="gender" value="laki-laki" required>
+            <label for="laki-laki">Man</label>
+            <input type="radio" id="perempuan" name="gender" value="perempuan" required>
+            <label for="perempuan">Woman</label>
+        </div>
+    </div><br>
+        
+        <div class="form-group">
+            <label for="ide">Ide-Ide:</label><br>
+            <select name="ide" id="ide" required><br>
+                <option value="lukisan">Painting Art</option>
+                <option value="digital">Digital Art</option>
+                <option value="fotografi">Fotografi</option>
+                <option value="ilustrasi">Ilustrasi</option>
+                <option value="animasi">Animasi</option>
+            </select>
+        </div><br>
+        
+        <label for="asal">Asal:</label><br>
+        <input type="text" id="asal" name="asal" required><br><br>
+
+        <label for="day">Tanggal Lahir:</label><br>
+        <input type="date" id="day" name="day" required><br><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea name="bio" id="bio" cols="10" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Simpan">
+        <input type="reset" value="Ulang">
+    </form>
+    <script src="validasi.js"></script>
+    <script src="interaktif.js"></script>
+</body>
+</html>
