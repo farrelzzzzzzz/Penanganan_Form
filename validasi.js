@@ -1,13 +1,13 @@
-function validasiform(){
-// Mengambil Nilai Dari Form
-const nama = document.getElementById('nama').value;
-const email = document.getElementById('email').value;
-const pass = document.getElementById('pass').value;
-const gender = document.querySelector('input[name="gender"]:checked');
-const ide = document.getElementById('ide').value;
-const day = document.getElementById('day').value;
-const asal = document.getElementById('asal').value;
-const bio = document.getElementById('bio').value;
+function validasiform() {
+    const nama = document.getElementById('nama').value;
+    const email = document.getElementById('email').value;
+    const pass = document.getElementById('pass').value;
+    const gender = document.querySelector('input[name="gender"]:checked');
+    const ide = document.getElementById('ide').value;
+    const day = document.getElementById('day').value;
+    const asal = document.getElementById('asal').value;
+    const bio = document.getElementById('bio').value;
+
 
 // Pola Untuk Validasi
 const namePattern = /^[A-Za-z\s]+$/;
@@ -73,6 +73,6 @@ if(bio === ""){
 }
 
 // Jika Validasi Berhasil
-alert("Form Berhasil Disimpan ! ");
-return true;
+alert("Form Berhasil Disimpan !");
+    return true;
 }
