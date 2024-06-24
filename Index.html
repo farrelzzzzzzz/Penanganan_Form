@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Biodata</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-    <form id="formbiodata" action="proses.php" method="post" novalidate>
+    
+    <form  id="formbiodata" action="proses.php" method="post" onsubmit="return validasiform();">
         <h2>Form Biodata</h2>
         <label for="nama">Nama:</label><br>
         <input type="text" id="nama" name="nama" required><br><br>
@@ -51,7 +53,9 @@
         <input type="submit" value="Simpan">
         <input type="reset" value="Ulang">
     </form>
+
     <script src="validasi.js"></script>
     <script src="interaktif.js"></script>
+   
 </body>
 </html>
